@@ -1,0 +1,5 @@
+%Initialization
+t=0:0.01:50;
+u=(8*sin(3*t)).*exp(-0.25*t)
+ts = timeseries(u,t)
+save('Input_signal','ts','-v7.3');
